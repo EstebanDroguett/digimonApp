@@ -21,7 +21,7 @@ export const DigimonList = ({ level }) => {
                     loading && <Loading setLoading={setLoading} />
                 }
                 {
-                    !loading && <div className='card-grid'>
+                    !loading && <div className='card-grid animate__animated animate__fadeInUpBig'>
                         {
                             digimons.map(digimon => {
                                 return (

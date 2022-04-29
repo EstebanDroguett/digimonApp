@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useParams, Navigate, useNavigate } from 'react-router-dom'
 import { getDigimonsByNameSearch } from '../../selectors/getDigimonsByNameSearch';
 import { Loading } from '../loading/Loading';
+import 'animate.css';
 
 export const DigimonScreen = () => {
 
@@ -44,14 +45,14 @@ export const DigimonScreen = () => {
             {
                 !loading &&
                 <div className="row mt-5">
-                    <div className="col-4">
+                    <div className="col-4 animate__animated animate__fadeInLeft">
                         <img
                             src={img}
                             alt={name}
-                            className="img-thumbnail animate__animated animate__fadeInLeft"
+                            className="img-thumbnail"
                         />
                     </div>
-                    <div className="col-8 animate__animated animate__fadeIn">
+                    <div className="col-8 animate__animated animate__fadeInRight">
                         <h3>{digimonData.name}</h3>
                         <h5 className="mt-3">Level</h5>
                         <p>{level}</p>

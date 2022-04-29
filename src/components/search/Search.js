@@ -51,7 +51,7 @@ export const Search = () => {
 
                     <div className="row text-center">
 
-                        <div className="col-5">
+                        <div className="col-6 animate__animated animate__fadeInLeft">
                             <h4>Search</h4>
                             <hr />
 
@@ -72,7 +72,7 @@ export const Search = () => {
                                 </button>
                             </form>
                         </div>
-                        <div className="col-7">
+                        <div className="col-6 animate__animated animate__fadeInRight">
                             <h4>Result</h4>
                             <hr />
 

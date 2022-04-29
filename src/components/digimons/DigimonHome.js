@@ -2,6 +2,7 @@ import { DigimonCard } from './DigimonCard';
 import { digimons } from '../../data/data';
 import { Loading } from '../loading/Loading';
 import { useEffect, useState } from 'react';
+import 'animate.css';
 
 export const DigimonHome = () => {
 
@@ -23,7 +24,7 @@ export const DigimonHome = () => {
                     loading && <Loading setLoading={setLoading} />
                 }
                 {
-                    !loading && <div className='card-grid'>
+                    !loading && <div className='card-grid animate__animated animate__fadeInUpBig'>
                         {
                             digimons.map(digimon => {
                                 return (
