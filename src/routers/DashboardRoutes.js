@@ -32,7 +32,7 @@ export const DashboardRoutes = () => {
                     <Route path="search" element={<Search />} />
                     <Route path="digimon/:digimonName" element={<DigimonScreen />} />
 
-                    <Route path="/" element={<DigimonHome />} />
+                    <Route path="*" element={<DigimonHome />} />
 
                 </Routes>
             </div>
